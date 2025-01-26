@@ -1,0 +1,15 @@
+#!/bin/bash
+
+max_retries=20
+retry_count=0
+
+while [ $retry_count -lt $max_retries ]; do
+    ./admin
+
+    echo "Script failed. Retrying... ($((retry_count+1))/$max_retries)"
+    retry_count=$((retry_count+1))
+    
+done
+
+echo "Script failed after $max_retries attempts."
+exit 1

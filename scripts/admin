@@ -1,5 +1,5 @@
 #!/bin/bash
 
-python3 ../drivers/bot_mcgraw.py username password "https://link_to_homework_on_canvas"
+python3 ../drivers/bot_mcgraw.py username password "https://elearning.utdallas.edu/ultra/courses/_373561_1/cl/outline"
 
 echo "Initializing..."
